@@ -1,0 +1,12 @@
+void setup()
+{
+  pinMode(2, OUTPUT); // led
+}
+
+void loop()
+{
+  digitalWrite(2, HIGH); // led acende
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(2, LOW); // led apaga
+  delay(500); // Wait for 500 millisecond(s)
+}

@@ -1,0 +1,23 @@
+void setup()
+{
+  pinMode(2, OUTPUT); // led vermelho
+  pinMode(4, OUTPUT); // led amarelo
+  pinMode(6, OUTPUT); // led verde
+}
+
+void loop()
+{
+  digitalWrite(2, HIGH); // acende led vermelho
+  delay(1000);
+  digitalWrite(2, LOW); // apaga led vermelho
+  delay(1000);
+  digitalWrite(6, HIGH); // acende led verde
+  delay(1000);
+  digitalWrite(6, LOW); // apaga led verde
+  delay(1000);
+  digitalWrite(4, HIGH); // acende led amarelo
+  delay(1000);
+  digitalWrite(4, LOW); // apaga led amarelo
+  delay(1000);
+
+}
