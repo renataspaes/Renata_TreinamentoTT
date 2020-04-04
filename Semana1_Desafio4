@@ -1,0 +1,36 @@
+Sensor de proximidade
+
+Segundo a Wikipédia: "Os sensores de proximidade ou presença são dispositivos usados para detectar,
+sem qualquer tipo de contato físico, a presença ou ausência de objetos. Emitindo, constantemente,
+um campo ou um feixe de radiação eletromagnética, o sensor de proximidade detecta mudanças no campo e
+emite um sinal de retorno"
+
+Sensor Infravermelho Reflexivo Industrial E18-d80nk Arduino
+
+-É composto por um emissor e um fotoreceptor de infravermelho no mesmo corpo, sendo que funciona por reflexão, ou seja,
+a luz infravermelha quando atinge algum objeto dentro da faixa de detecção, a saída (saída NPN com coletor aberto) é acionada.
+
+-O sensor possui uma longa distância de detecção (entre 3cm e 80cm) e possui pouca interferência (ou praticamente nenhuma)
+da luz ambiente, pois trabalha com luz infravermelha modulada.
+
+-O sensor possui um ajuste de distância para a detecção e fornece uma saída digital (Ligado ou desligado).
+
+-Este sensor não informa a distância, mas sim se há ou não algum objeto (obstáculo) dentro da faixa de detecção ajustada.
+
+-Ótimo sensor para projetos de robótica com Arduino e outros microcotroladores.
+
+-Necessita de um resistor de pullup de 10Kohm (Incluso
+
+Specifications
+- Input voltage : +5V DC
+- Current consumption : > 25mA (min) ~ 100mA (max)
+- Dimension : 1.7cm (diameter) x 4.5cm (length)
+- Cable length : 45cm
+- Detection of objects : transparent or opaque
+- Diffuse reflective type
+- Sensing range : 3cm to 80cm (depends on obstacle surface)
+- NPN output (normally high)
+- Environment temperature : -25 °C ~ 55 °C
+
+
+'https://www.rhydolabz.com/documents/27/E18-D80NK.pdf'
