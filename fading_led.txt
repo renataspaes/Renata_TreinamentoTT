@@ -1,0 +1,23 @@
+int brightness = 0; // quantidade de brilho
+int fadeAmount = 5; // variacaoo entre cada degrade que o LED sera aceso
+
+
+void setup()
+{
+  pinMode(9, OUTPUT);
+}
+
+void loop()
+{
+
+ analogWrite(9, brightness);
+ // muda o brilho para o proximo loop
+  brightness = brightness + fadeAmount;
+
+  // inverte a direção de fade quando o brilho chega aos limites
+  if (brightness == 0 || brightness == 255) {
+    fadeAmount = -fadeAmount ;
+  }
+  // espera de 30 milissegundos para mudar o brilho
+  delay(30);
+}
