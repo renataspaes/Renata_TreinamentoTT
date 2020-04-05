@@ -1,0 +1,18 @@
+int motorPin = 2;
+int buttonPin = 7;
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT);
+  pinMode(motorPin, OUTPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH) {
+    digitalWrite(motorPin, HIGH);
+  }
+  else {
+    digitalWrite(motorPin, LOW);
+  }
+}
