@@ -1,0 +1,15 @@
+unsigned int valorLido;
+unsigned int pwm;
+
+void setup (){
+  pinMode (10, OUTPUT);
+}
+
+void loop () {
+
+  valorLido = analogRead(A0); // valor no potenciômetro
+  pwm = map(valorLido, 0 , 1023, 0, 255); // mapeamento do valor
+
+  analogWrite(10,pwm); // variação do brilho do led
+
+}
