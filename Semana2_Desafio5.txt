@@ -1,0 +1,22 @@
+int leds[] = {13, 9, 7, 4};
+
+void setup()
+{
+  for(int i=0; i<sizeof(leds); i++) {
+    pinMode(leds[i], OUTPUT);
+  }
+}
+
+void loop()
+{
+  for(int j=0; j<sizeof(leds); j++) {
+    digitalWrite(leds[j], HIGH);
+    delay(500);
+  }
+
+  for(int z=3; z>=0; z--) {
+    digitalWrite(leds[z], LOW);
+    delay(500);
+  }
+
+}
