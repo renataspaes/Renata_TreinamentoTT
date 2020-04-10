@@ -1,0 +1,24 @@
+const int led = 13;
+int status = LOW;
+unsigned long value = 0;
+const long interval = 1000;
+
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  unsigned long time = millis();
+  if (time - value >= interval) {
+    value = time;
+
+    if (status == LOW) {
+      status = HIGH;
+    }
+    else {
+      status = LOW;
+    }
+
+    digitalWrite(led, status);
+  }
+}
