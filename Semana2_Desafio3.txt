@@ -1,0 +1,17 @@
+unsigned int valorLido;
+unsigned int pwm;
+
+void setup (){
+  pinMode (9, OUTPUT);
+  Serial.begin(9600); // inicia o Serial
+}
+
+void loop () {
+
+  valorLido = analogRead(A0); // valor no potenciômetro
+  Serial.print(valorLido);
+  pwm = map(valorLido, 0 , 1023, 0, 255); // mapeamento do valor
+
+  analogWrite(9,pwm); // variação do brilho do led
+
+}
