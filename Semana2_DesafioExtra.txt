@@ -12,7 +12,6 @@ void setup()
     pinMode(leds[i], OUTPUT);
   }
   pinMode(button, INPUT);
-  Serial.begin(9600);
 }
 
 void loop()
@@ -70,9 +69,6 @@ void loop()
     bin[2]=0;
     cont = 0;
   }
-    Serial.print(bin[0]);
-    Serial.print(bin[1]);
-    Serial.print(bin[2]);
     if (bin[0] == 1){
       digitalWrite(leds[0], HIGH);
     }
