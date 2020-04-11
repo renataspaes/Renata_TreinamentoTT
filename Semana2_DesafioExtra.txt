@@ -1,0 +1,99 @@
+int leds[] = {13, 9, 7};
+int button = 2;
+int quo;
+int rest;
+int bin[3];
+int status =0;
+int cont = 0;
+
+void setup()
+{
+  for(int i=0; i<sizeof(leds); i++) {
+    pinMode(leds[i], OUTPUT);
+  }
+  pinMode(button, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  status = digitalRead(button);
+  delay(500);
+
+  if (status == 1){
+    switch(cont){
+    case 0:
+    bin[0]=0;
+    bin[1]=0;
+    bin[2]=0;
+  }
+  switch(cont){
+    case 1:
+    bin[0]=0;
+    bin[1]=0;
+    bin[2]=1;
+  }
+  switch(cont){
+    case 2:
+    bin[0]=0;
+    bin[1]=1;
+    bin[2]=0;
+  }
+  switch(cont){
+    case 3:
+    bin[0]=0;
+    bin[1]=1;
+    bin[2]=1;
+  }
+  switch(cont){
+    case 4:
+    bin[0]=1;
+    bin[1]=0;
+    bin[2]=0;
+  }
+  switch(cont){
+    case 5:
+    bin[0]=1;
+    bin[1]=0;
+    bin[2]=1;
+  }
+  switch(cont){
+    case 6:
+    bin[0]=1;
+    bin[1]=1;
+    bin[2]=0;
+  }
+  switch(cont){
+    case 7:
+    bin[0]=0;
+    bin[1]=0;
+    bin[2]=0;
+    cont = 0;
+  }
+    Serial.print(bin[0]);
+    Serial.print(bin[1]);
+    Serial.print(bin[2]);
+    if (bin[0] == 1){
+      digitalWrite(leds[0], HIGH);
+    }
+    else {
+      digitalWrite(leds[0], LOW);
+    }
+    if (bin[1] == 1){
+      digitalWrite(leds[1], HIGH);
+    }
+    else {
+      digitalWrite(leds[1], LOW);
+    }
+    if (bin[2] == 1){
+      digitalWrite(leds[2], HIGH);
+    }
+    else {
+      digitalWrite(leds[2], LOW);
+    }
+    cont++;
+    status = 0;
+  }
+  delay(500);
+
+}
