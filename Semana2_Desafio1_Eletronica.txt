@@ -1,0 +1,57 @@
+Encontre o datasheet do componente de código TMP36 e encontre as seguintes
+informações sobre o mesmo:
+
+
+➔ Que tipo de componente é;
+    O TMP36 é um circuito integrado, ou seja, é um circuito com diversos componentes eletrônicos, como
+transistor, resistor, diodo, capacitor etc.
+
+➔ Qual é sua finalidade;
+    O componente TMP36 é um sensor utilizado para medir temperatura e fornecer uma tensão linearmente
+    proporcional a está temperatura em graus celsius
+
+➔ Explique o funcionamento do mesmo;
+➔ Fator de escala [datasheet]
+◆ Encontre o valor e descreva o que significa este termo.
+    O fator de escala é uma ferramenta utilizada para achar a proporção entre figuras similares.
+    Valor encontrado no datasheet: 10 mV/°C
+
+➔ Precisão [datasheet]
+◆ Encontre o valor e descreva o que significa este termo.
+    O INMETRO define como precisão a repetibilidade de uma medida, ou seja, independentemente se o valor
+    encontrado está correto ou não, se ele for encontrAdo mais vezeS, quer dizer que o medidor é preciso.
+    "Exemplo: se você pesa 70 kg e, ao se pesar, obtém três leituras do seu peso (73 kg, 73 kg, 73 kg).
+    Pode-se aﬁrmar que a balança está precisa.
+    O seu peso está errado, mas o valor lido nas três vezes estavam iguais. "
+    Valor encontrado no datasheet: fornece precisões típicas de ± 1 ° C a + 25 ° C
+    e ± 2 ° C na faixa de temperatura de -40 ° C a + 125 ° C.
+
+➔ Temperatura operacional [datasheet]
+◆ Encontre o valor e descreva o que significa este termo.
+    É a faixa de temperatura em que o dispositivo funciona de forma mais eficaz.
+    Valor no datasheet: de −55°C até +150°C
+
+
+➔ Linearidade [Datasheet]
+◆ Encontre o valor e descreva o que significa este termo.
+    Segundo a Wikipédia "Linearidade é a propriedade de uma relação ou função matemática,
+    o que significa que pode ser representada graficamente como uma linha reta"
+    Pode-se dizer que o componente TMP36 possui linearidade, pois gera um tensão que é linearmente
+    proporcional à temperatura lida. Se fosse feito um gráfico relacionando essas duas grandezas,
+    obteríamos uma linha reta.
+    Valor encontrado no datasheet: ±0.5°C linearity (typ)
+
+
+
+➔ Cite algumas aplicações deste componente
+    -Sistemas de controle ambiental;
+    -Proteção térmica;
+    -Controle de processo industrial;
+    -Alarmes de incêndio;
+    -Monitores do sistema de energia;
+    -Gerenciamento térmico da CPU
+
+
+"https://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf"
+
+"https://produto.mercadolivre.com.br/MLB-976993701-sensor-medidor-de-temperatura-tmp36-arduino-pic-_JM?matt_tool=79246729&matt_word&gclid=CjwKCAjw1cX0BRBmEiwAy9tKHiCcxaOn9lZmuYCfHfxHR3xXibdizR6BQofkJ1Ac2qDXV5TUgRgWHhoCONEQAvD_BwE&quantity=1"
