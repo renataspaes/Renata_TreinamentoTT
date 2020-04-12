@@ -1,0 +1,12 @@
+Busque na internet um tipo de atuador e em seguida escreva sobre seu funcionamento e
+exemplos de uso.
+
+ Atuadores são dispositivos que convertem energia (gerada por ar, água ou eletricidade) em movimento
+ (energia mecânica).
+
+ -Atuadores pneumáticos em robótica são utilizados como pistão;
+ -Utilizam ar comprimido para gerar movimento;
+ -São utilizados para transporte de cargas pequenas e médias;
+ -Podem ter a forma de cilindros lineares para gerar os
+ movimentos lineares ou cilindros rotativos para
+ proporcionar deslocamentos angulares.
