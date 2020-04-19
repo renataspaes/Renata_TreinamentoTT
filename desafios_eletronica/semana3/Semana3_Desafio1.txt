@@ -1,0 +1,32 @@
+Sabe o que é um CI? ​ Encontre o datasheet do componente de código 74HC32 e encontre as
+seguintes informações sobre o mesmo:
+
+Como visto no desafio 1 da semana 2, um circuito integrado (CI), é um componente que integra vários outros
+componentes eletrônicos como resistor, transistor, diodo, capacitor etc.
+
+➔ Que tipo de componente é;
+ O componente 74HC32 é um CI porta lógica OR. Ele possui quatro 4 portas lógicas OR independentes.
+
+➔ Qual é sua finalidade;
+  As portas lógicas são importantes na realização de operações matemáticas e desenvolver lógica eletrônica,
+  que funciona de forma binária 0 ou 1, que representam a tensão no circuito.
+
+➔ Explique o funcionamento do mesmo;
+  A porta OR funciona com soma lógica e trabalha com a seguinte tabela verdade:
+ Entrada1   Entrada2   Saída
+ 0          0          0
+ 0          1          1
+ 1          0          1
+ 1          1          1
+
+  Ou seja, se pelo menos uma das entradas for 1, a saída será 1.
+
+➔ Cite algumas aplicações deste componente
+  Alguns exemplos de aplicação são: brinquedos, instrumentos musicais, assistência médica e fitness,
+  assim como em ensino de fundamentos de eletrônica e álgebra Booleana.
+
+
+
+https://athoselectronics.com/portas-logicas-eletronica-digital/
+https://www.autocorerobotica.com.br/74hc32-ci-porta-logica-or - de onde baixei o datasheet
+http://www.mecaweb.com.br/eletronica/content/e_porta_logica
