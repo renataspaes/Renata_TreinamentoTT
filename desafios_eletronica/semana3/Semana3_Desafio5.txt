@@ -1,0 +1,9 @@
+﻿                                 Imagem 1 – Início da simulação – LED ligado e botão solto
+
+
+
+                           Imagem 2  – LED apagado e botão pressionado
+
+
+A porta lógica NOT inverte o valor de input, ou seja, quando o botão não está clicado (0),  o componente inverte e a saída é 1, o que faz ligar o LED, o mesmo acontece. Responde à tabela verdade da imagem abaixo:
+
