@@ -1,0 +1,65 @@
+﻿Você já deve ter percebido que os resistores têm cores diferentes né? Sabe porque?
+Busque em livros e na internet como é feita a leitura do código de cores dos resistores e o que eles
+representam. Em seguida encontre os valores para os resistores abaixo:
+
+
+
+A partir das cores nos resistores é possível identificar sua resistência. Cada cor representa um algarismo e a leitura é feita a partir da cor mais na extremidade do resistor. A primeira faixa representa o primeiro algarismo da resistência.
+Alguns resistores possuem 3 faixas de cores e é possível achar resistores com até 6 faixas de cores. 
+
+	  
+   Imagem 1 – Tabela para identificação de resistores com 3 faixas de cores
+“Obs: Para os resistores de 3 faixas a tolerância pode ser considerada em ± 20%, sendo definido sem cor.”
+
+
+
+ Imagem 2 – Tabela para identificação de resistores com 4 faixas de cores
+
+
+
+
+     Imagem 3 – Tabela para identificação de resistores com 5 faixas de cores
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Imagem 4 – Tabela para identificação de resistores com 6 faixas de cores
+
+
+
+
+a) laranja, laranja, marrom, dourado – Pela tabela da imagem 2, a resistência é 33000 Ω com tolerância de  +- 5% de tolerância, ou seja, pode variar de 31350 Ω até 34650 Ω
+
+b) cinza, verde, verde, marrom - Pela tabela da imagem 2, a resistência é 8500000 Ω com tolerância de  +- 1% de tolerância, ou seja, pode variar de 8415000 Ω até 8585000 Ω
+
+c) vermelho, verde, laranja, dourado - Pela tabela da imagem 2, a resistência é 25000 Ω com tolerância de  +- 5% de tolerância, ou seja, pode variar de 23750 Ω até 26250 Ω
+
+d) amarelo, violeta, verde, dourado - Pela tabela da imagem 2, a resistência é 4700000 Ω com tolerância de  +- 5% de tolerância, ou seja, pode variar de 4465000 Ω até 4935000 Ω
+
+e) marrom, preto, vermelho- Pela tabela da imagem 1, a resistência é de 1000 Ω
+
+f) vermelho, violeta, marrom, dourado - Pela tabela da imagem 2, a resistência é 270 Ω com tolerância de  +- 5% de tolerância, ou seja, pode variar de 256,50 Ω até 283,5 Ω
+
+g) azul, laranja, branco, laranja, branco - Pela tabela da imagem 3, a resistência é 639000 Ω sem tolerância 
+
+h) amarelo, verde, cinza, branco, marrom, vermelho - Pela tabela da imagem 4, a resistência é 458000000000 Ω com tolerância de  +- 1% de tolerância, ou seja, pode variar de 453420000000 Ω até 462580000000 Ω e faixa de coeficiente de tempetura de 50 PPM/ºC
+
+
+
+
+https://www.mundodaeletrica.com.br/codigo-de-cores-de-resistores/
+
+https://brasilescola.uol.com.br/fisica/codigo-cores-para-resistores.htm
