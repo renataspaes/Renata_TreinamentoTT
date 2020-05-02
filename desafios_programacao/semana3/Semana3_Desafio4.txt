@@ -1,0 +1,22 @@
+int pir = A0;
+int buz = 8;
+int valuePir = 0;
+
+void setup()
+{
+  pinMode(pir, INPUT);
+  pinMode(buz, OUTPUT);
+}
+
+void loop()
+{
+  valuePir = digitalRead(pir);
+  if(valuePir == 1){
+  	tone(buz, 262, 200);
+    delay(200);
+    tone(buz, 300, 200);
+    delay(200);
+    noTone(buz);
+  }
+
+}
