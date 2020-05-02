@@ -1,0 +1,16 @@
+int pir = A0;
+int valuePir = 0;
+// PIR eh um sensor de presenca e movimento. Se baseia na deteccao de calor.
+// No modelo DYP-ME003 a temperatura de trabalho é de -20 ~ +80ºC
+
+void setup()
+{
+  pinMode(pir, INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  valuePir = digitalRead(pir);
+  Serial.println(valuePir);
+}
