@@ -1,0 +1,23 @@
+int led = 2;
+int button2 = 4;
+int inbutton2 = 0;
+
+
+void setup()
+{
+  pinMode(button2, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  inbutton2 = digitalRead(button2);
+  // para a porta NOT, o resultado é invertido
+  if(!inbutton2 == 0){
+  	digitalWrite(led, LOW);
+  }
+  else {
+  	digitalWrite(led, HIGH);
+  }
+  delay(1000);
+}

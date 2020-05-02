@@ -1,0 +1,25 @@
+int led = 2;
+int button1 = 3;
+int button2 = 4;
+int inbutton1 = 0;
+int inbutton2 = 0;
+
+
+void setup()
+{
+  pinMode(button1, INPUT);
+  pinMode(button2, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  inbutton1 = digitalRead(button1);
+  inbutton2 = digitalRead(button2);
+  // para a porta OR, apenas 1 e 1 dá um resultado igual a 1
+  if(inbutton1 == 1 && inbutton2 == 1){
+  	digitalWrite(led, HIGH);}
+  else {
+  	digitalWrite(led, LOW);
+  }
+}
