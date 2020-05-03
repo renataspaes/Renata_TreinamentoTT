@@ -1,0 +1,23 @@
+int led = 8;
+int button = 13;
+int valueButton = 0;
+
+void setup()
+{
+  pinMode(button, INPUT_PULLUP);
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  valueButton = digitalRead(button);
+
+  if(valueButton == 0){
+  	digitalWrite(led, HIGH);
+    delay(1000);
+  }
+  else {
+    digitalWrite(led, LOW);
+  }
+
+}
