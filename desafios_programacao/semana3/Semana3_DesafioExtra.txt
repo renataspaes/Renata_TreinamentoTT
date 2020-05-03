@@ -1,0 +1,43 @@
+int led = 2;
+int button1 = 3;
+int button2 = 4;
+int inbutton1 = 0;
+int inbutton2 = 0;
+int pir = A0;
+int valuePir = 0;
+int buz = 8;
+
+void setup()
+{
+  pinMode(button1, INPUT);
+  pinMode(button2, INPUT);
+  pinMode(pir, INPUT);
+
+  pinMode(led, OUTPUT);
+  pinMode(buz, OUTPUT);
+}
+
+void loop()
+{
+  inbutton1 = digitalRead(button1);
+  inbutton2 = digitalRead(button2);
+  valuePir = digitalRead(pir);
+
+  while(valuePir == 1){
+    if (inbutton1 == 1 && inbutton2 == 1){
+    	break;
+    }
+    else{
+      digitalWrite(led, HIGH);
+      delay(200);
+      digitalWrite(led, LOW);
+      delay(200);
+      tone(buz, 262, 200);
+      delay(200);
+      tone(buz, 330, 200);
+      delay(200);
+    }
+    inbutton1 = digitalRead(button1);
+  	inbutton2 = digitalRead(button2);
+  }
+}
