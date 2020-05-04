@@ -1,0 +1,29 @@
+int SERVO = 9;
+
+
+#include <Servo.h>
+Servo myservo;  // criação do objeto servo
+void setup()
+{
+  // Declara o pino que o servo está conectado
+  myservo.attach(SERVO);
+
+  }
+
+void loop()
+{
+  // for para levar o servo motor até o 0 graus (direita)
+ for (int degree = 180; degree >= 0; degree -= 1) {
+    myservo.write(degree);
+    delay(15);
+  }
+ delay(2000); // espera 2 segundos
+
+ // for para levar o servo motor até 180 graus (esquerda)
+ for (int degree = 0; degree <= 180; degree += 1) {
+    myservo.write(degree);
+    delay(15);
+  }
+
+
+}
