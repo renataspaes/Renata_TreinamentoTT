@@ -1,0 +1,13 @@
+"#include <Servo.h>
+Servo myservo;  // create servo object to control a servo
+void setup()
+{
+  // Define que o servo esta ligado a porta 9
+  myservo.attach(9);
+}"
+
+O código acima foi retirado do site "https://www.arduinoecia.com.br/controlando-um-servo-motor-com-arduino/"
+e serve como exemplo prático de como funciona a função attach().
+Segundo a própria documentação do Arduino, a função attach() serve para anexar a variável Servo em um pino
+do Arduino, ou seja, é uma declaração do Servo, que no exemplo acima está conectado ao pino 9 do Arduino.
+Um servo motor é um tipo de motor que se move x graus para esquerda ou x graus para a direita.
