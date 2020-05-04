@@ -1,0 +1,34 @@
+int SERVO = 9;
+int led = 13;
+int button = 2;
+int valueButton = 0;
+
+#include <Servo.h>
+Servo myservo;  // criação do objeto servo
+
+
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
+  myservo.attach(SERVO);
+}
+
+void loop()
+{
+ valueButton = digitalRead(button);
+  if(valueButton == 1){
+  	digitalWrite(led, HIGH);
+    for (int degree = 0; degree <= 90; degree += 1) {
+    myservo.write(degree);
+    delay(15);
+  }
+  }
+  else {
+  	digitalWrite(led, LOW);
+    for (int degree = 90; degree >= 0; degree -= 1) {
+    myservo.write(degree);
+    delay(15);
+  }
+  }
+}
