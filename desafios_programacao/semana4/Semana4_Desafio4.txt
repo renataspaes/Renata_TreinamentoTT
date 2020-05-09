@@ -16,19 +16,14 @@ void setup()
 
 void loop()
 {
- valueButton = digitalRead(button);
-  if(valueButton == 1){
+  valueButton = digitalRead(button);
+  if(valueButton == 0){
   	digitalWrite(led, HIGH);
-    for (int degree = 0; degree <= 90; degree += 1) {
-    myservo.write(degree);
-    delay(15);
-  }
+    myservo.write(90);
+    delay(1000);
   }
   else {
   	digitalWrite(led, LOW);
-    for (int degree = 90; degree >= 0; degree -= 1) {
-    myservo.write(degree);
-    delay(15);
-  }
+    myservo.write(0);
   }
 }
