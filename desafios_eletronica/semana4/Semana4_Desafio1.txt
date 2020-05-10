@@ -1,0 +1,41 @@
+Encontre o datasheet do componente de código LM555 da texas Instruments e encontre as
+seguintes informações sobre o mesmo:
+➔ Que tipo de componente é;
+O LM555 é um circuito integrado
+
+➔ Qual é sua finalidade;
+Ele pode ser utilizado como temporizador ou oscilador.
+
+➔ Cite algumas aplicações deste componente
+O LM555 possui três modos de funcionamento, em cada modo é possível utilizar o componente de forma diferente:
+No modo astável, pode ser aplicado em detector de pulso e interruptor de toque.
+No modo monosestável, pode ser aplicado em vibradores, relógios e alarmes de segurança.
+No modo biestável, pode ser aplicado em interruptores imunes a ruído
+
+➔ Explique o funcionamento de um dos seus modos(Astável, Monoestável e Biestável);
+Modo monoestável: neste modo o componente funciona como um disparador. Ele recebe um sinal de entrada e
+dispara uma saída em forma de pulso com duração específica. Pode-se ver a configuração na imagem1_desafio1.4
+
+Modo astável: neste modo o componente funciona como um oscilador. Gerando pulsos contínuos em uma determinada
+frequência, que é determinada por dois resistores e um capacitor. Pode-se ver a configuração na imagem2_desafio1.4
+
+Modo biestável: neste modo o componente funciona como um alternador de estado. Usando uma tensão, pode ter
+o estado ligado ou desligado. Pode-se ver a configuração na imagem3_desafio1.4
+
+
+➔ Encontre qual o time delay(“tempo de espera”), no modo monoestável, utilizando-se um
+capacitor de 0.1uF e um resistor de 10MΩ.
+◆ Dica: utilize os gráficos
+Segundo o gráfico (Figure 13 do datasheet), o time delay para essa situação é de aproximadamente 1s.
+
+
+➔ Como é calculado o período total de oscilação no modo astável (fórmula matemática)
+ALTO = 0,7 x C x (R1+R2)
+BAIXO = 0,7 x C x R2
+Logo, o T total pode ser calculado usando: T=0.7*(R1+2*R2)*C
+Sendo R1 e R2 as resistências e C o valor no capacitor.
+
+http://eletronicaparaartistas.com.br/circuitos-integrados-5-555-em-modo-astavel/
+https://blog.fazedores.com/ci-555-conheca-o-chip-e-o-modo-monoestavel-parte-1/
+http://www.ti.com/lit/ds/symlink/lm555.pdf?&ts=1589146411196
+http://eletronicaparaartistas.com.br/circuitos-integrados-1-introducao-ao-555-modo-biestavel/
